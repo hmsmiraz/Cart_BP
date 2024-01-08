@@ -5,14 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/images/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart_BP</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="max-w-5xl mx-auto bg-white">
+  <body class="bg-white">
     <header>
       <!-- header -->
       <div class="bg-orange-100 p-4 flex justify-between items-center">
@@ -52,7 +52,7 @@
     </header>
     <main>
       <!-- First Section -->
-      <div class="bg-orange-500 text-white p-8">
+      <div class="bg-orange-100 text-black p-8 text-center">
         <h2 class="text-3xl font-bold">Welcome to Delicious Eats</h2>
         <p class="text-lg">Explore our delectable offerings</p>
       </div>
@@ -63,17 +63,17 @@
           <!-- Card 1 -->
           <div class="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
-              src="food1.jpg"
+              src="/images/1.jpeg"
               alt="Food 1"
               class="w-full h-40 object-cover"
             />
             <div class="p-4">
-              <h3 class="text-xl font-semibold mb-2">Dish Name</h3>
+              <h3 class="text-xl font-semibold mb-2">Chicken</h3>
               <p class="text-gray-600 mb-2">$10.99</p>
               <p class="text-gray-500 mb-4">Details about the dish go here.</p>
               <div class="flex justify-between">
                 <button
-                  class="bg-blue-500 text-white px-4 py-2 rounded-md mr-2 hover:bg-blue-600 transition duration-300 ease-in-out"
+                  class="bg-orange-500 text-white px-4 py-2 rounded-md mr-2 hover:bg-blue-600 transition duration-300 ease-in-out"
                 >
                   Add to Order
                 </button>
@@ -89,17 +89,17 @@
           <!-- Card 2 -->
           <div class="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
-              src="food2.jpg"
+              src="/images/2.jpeg"
               alt="Food 2"
               class="w-full h-40 object-cover"
             />
             <div class="p-4">
-              <h3 class="text-xl font-semibold mb-2">Another Dish Name</h3>
+              <h3 class="text-xl font-semibold mb-2">Fajitas</h3>
               <p class="text-gray-600 mb-2">$12.99</p>
               <p class="text-gray-500 mb-4">Details about this dish.</p>
               <div class="flex justify-between">
                 <button
-                  class="bg-blue-500 text-white px-4 py-2 rounded-md mr-2 hover:bg-blue-600 transition duration-300 ease-in-out"
+                  class="bg-orange-500 text-white px-4 py-2 rounded-md mr-2 hover:bg-blue-600 transition duration-300 ease-in-out"
                 >
                   Add to Order
                 </button>
@@ -115,17 +115,17 @@
           <!-- Card 3 -->
           <div class="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
-              src="food3.jpg"
+              src="/images/3.jpeg"
               alt="Food 3"
               class="w-full h-40 object-cover"
             />
             <div class="p-4">
-              <h3 class="text-xl font-semibold mb-2">Special Dish</h3>
+              <h3 class="text-xl font-semibold mb-2">Chicken Masala</h3>
               <p class="text-gray-600 mb-2">$15.99</p>
               <p class="text-gray-500 mb-4">Details about the special dish.</p>
               <div class="flex justify-between">
                 <button
-                  class="bg-blue-500 text-white px-4 py-2 rounded-md mr-2 hover:bg-blue-600 transition duration-300 ease-in-out"
+                  class="bg-orange-500 text-white px-4 py-2 rounded-md mr-2 hover:bg-blue-600 transition duration-300 ease-in-out"
                 >
                   Add to Order
                 </button>
@@ -138,6 +138,22 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- sidebar -->
+      <div
+        class="sidebar hidden fixed top-0 right-0 h-full w-72 bg-orange-500 shadow-lg z-50"
+      >
+        <!-- Close button -->
+        <button
+          class="text-white absolute top-4 right-4 focus:outline-none"
+          id="closeSidebar"
+        >
+        Close
+        </button>
+
+        <!-- Sidebar content -->
+        <!-- Add content for the cart here -->
       </div>
     </main>
     <script src="js/calculation.js"></script>
